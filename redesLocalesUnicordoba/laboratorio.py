@@ -45,7 +45,7 @@ def Ejecutar():
     h = int(input("Cantidad de hosts: "))    
 
     topo = ThreeTopo(h,s)
-    controller=RemoteController('c0', ip="192.168.1.12", port=6633)
+    controller=RemoteController('c0', ip="AQUI VA LA DIRECCION IP DE LA MAQUINA QUE TIENE OPENDAYLIGHT DENTRO DE LOS PARENTESIS", port=6633)
     net = Mininet(topo=topo, controller=controller)
     net.start()
     CLI(net)
